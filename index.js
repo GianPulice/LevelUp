@@ -1,4 +1,7 @@
+function Simulation(){
+
 //inicio los datos a recibir
+
 const Name = prompt("Ingrese su nombre");
 const rol = prompt("Cual es su rol? (Tanque, Daño, Especialista)");
 let levels = prompt("Cuantos niveles quiere subir?");
@@ -16,13 +19,13 @@ let randomSp = RandomStat();
 function SerchRol() {
     switch (rol) {
         case "Tanque" || "tanque":
-            randomHp += 10;
+            randomHp += 20;
             break;
         case "Daño" || "daño":
-            randomStr += 10;
+            randomStr += 20;
             break;
         case "Especialista" || "especialista":
-            randomSp += 10;
+            randomSp += 20;
             break;
         default:
             break;
@@ -65,3 +68,20 @@ let CharacterLVL = {
 
 console.log(CharacterOrigin);
 console.log(CharacterLVL);
+
+// Plantilla de cadena para la información del personaje
+const characterInfoTemplate = (character) => `
+    <h2>${character.name}</h2>
+    <p>Level: ${character.level}</p>
+    <p>HP: ${character.hp}</p>
+    <p>STR: ${character.str}</p>
+    <p>SP: ${character.sp}</p>
+`;
+
+const characterInfoContainer = document.getElementById('characterInfoContainer');
+
+
+characterInfoContainer.innerHTML = characterInfoTemplate(CharacterOrigin) + characterInfoTemplate(CharacterLVL);
+
+}
+
