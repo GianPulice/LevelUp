@@ -44,7 +44,8 @@ function statsLvl() {
         hpUp += RandomStat();
         strUp += RandomStat();
         spUp += RandomStat();
-        alert("Subiste a nivel: " + (i + 1) + "\n" +"Vida: " + hpUp + "\n" + " Daño: " + strUp  + "\n" + " Velocidad: " + spUp)
+        alert("Subiste a nivel: " + (i + 1) + "\n" +"Vida: " + hpUp + "\n" + " Daño: " + strUp  + "\n" + " Velocidad: " + spUp) // muestra en cada iteracion las nuevas estadisticas
+        
     }
     alert("Felicidades subiste a nivel: " + levels)
 }
