@@ -44,12 +44,14 @@ function statsLvl() {
         hpUp += RandomStat();
         strUp += RandomStat();
         spUp += RandomStat();
+        alert("Subiste a nivel: " + (i + 1) + "\n" +"Vida: " + hpUp + "\n" + " Daño: " + strUp  + "\n" + " Velocidad: " + spUp)
     }
+    alert("Felicidades subiste a nivel: " + levels)
 }
 
 statsLvl();
 
-//comparo el personaje al inicio y al final de la simulacion
+//guardo el personaje al inicio y al final de la simulacion
 let CharacterOrigin = {
     name: Name,
     level: 1,

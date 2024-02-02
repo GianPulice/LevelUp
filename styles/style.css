@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+
 body {
     background-image: url(../resource/pueblo.jpg);
+    font-family: 'Chakra Petch', sans-serif;
 }
 button{
     width: 20%;
     background-color: burlywood;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 div{
     color: antiquewhite;
+    font-family: 'Chakra Petch', sans-serif;
 }
